@@ -9,25 +9,25 @@ pipeline:
     commands:
       - ls -l ./
       - ls -l /var/run/
-      - docker build -t idosom_buildbot .
+      - docker build -t dongshanpione_buildbot .
       - chmod -R o+rw ./
 
 # Setup secrets
   install_secrets:
-    image: idosom_buildbot
+    image: dongshanpione_buildbot
     secrets: [tftp_ssh_key]
     commands:
       - mkdir ./secrets/ && echo "$SSH_KEY" > ./secrets/tftp_ssh_key && chmod 0600 ./secrets/tftp_ssh_key
 
 # Boot strap
   bootstrap:
-    image: idosom_buildbot
+    image: dongshanpione_buildbot
     commands:
       - make bootstrap
 
 # DL
   dl:
-    image: idosom_buildbot
+    image: dongshanpione_buildbot
     volumes:
       - /var/local/ci_cache/buildroot_dl:/var/local/ci_cache/buildroot_dl
     commands:
@@ -36,7 +36,7 @@ pipeline:
 
 # do it!
   build:
-    image: idosom_buildbot
+    image: dongshanpione_buildbot
     volumes:
       - /var/local/ci_cache/buildroot_dl:/var/local/ci_cache/buildroot_dl
       - /var/local/ci_cache/ccache:/var/local/ci_cache/ccache
