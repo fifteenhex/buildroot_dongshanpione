@@ -15,13 +15,10 @@ BR2_ROOTFS_POST_IMAGE_SCRIPT="support/scripts/genimage.sh"
 BR2_ROOTFS_POST_SCRIPT_ARGS="-c $(BR2_EXTERNAL_DONGSHANPIONE_PATH)/board/100ask/dongshanpione/genimage_rescue.cfg"
 BR2_LINUX_KERNEL=y
 BR2_LINUX_KERNEL_CUSTOM_GIT=y
-BR2_LINUX_KERNEL_CUSTOM_REPO_URL="https://github.com/linux-chenxing/linux.git"
-BR2_LINUX_KERNEL_CUSTOM_REPO_VERSION="mstar_v5_18_rebase"
 BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
 BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="$(BR2_EXTERNAL_DONGSHANPIONE_PATH)/board/100ask/dongshanpione/linux.config"
 BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES="$(BR2_EXTERNAL_DONGSHANPIONE_PATH)/board/100ask/dongshanpione/kernel_rescue.fragment"
 BR2_LINUX_KERNEL_XZ=y
-BR2_LINUX_KERNEL_DTS_SUPPORT=y
 BR2_LINUX_KERNEL_INTREE_DTS_NAME="mstar-infinity2m-ssd202d-100ask-dongshanpione mstar-infinity2m-ssd202d-100ask-dongshanpione-carrier"
 BR2_PACKAGE_MTD=y
 # BR2_PACKAGE_MTD_FLASHCP is not set
