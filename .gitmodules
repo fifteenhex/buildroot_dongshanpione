@@ -13,3 +13,6 @@
 [submodule "br2chenxing"]
 	path = br2chenxing
 	url = https://github.com/linux-chenxing/br2chenxing.git
+[submodule "br2directfb2"]
+	path = br2directfb2
+	url = https://github.com/fifteenhex/br2directfb2.git
