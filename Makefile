@@ -1,7 +1,7 @@
 PREFIX = dongshanpione
 DEFCONFIG = ../br2dongshanpione/configs/dongshanpione_defconfig
 DEFCONFIG_RESCUE = ../br2dongshanpione/configs/dongshanpione_rescue_defconfig
-EXTERNALS +=../br2autosshkey ../br2chenxing ../br2dongshanpione
+EXTERNALS +=../br2autosshkey ../br2chenxing ../br2dongshanpione ../br2directfb2
 TOOLCHAIN = arm-buildroot-linux-gnueabihf_sdk-buildroot.tar.gz
 
 all: buildroot-dl buildroot buildroot-rescue copy_outputs upload
