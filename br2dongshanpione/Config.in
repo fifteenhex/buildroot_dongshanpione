@@ -1,0 +1,12 @@
+config BR2_DONGSHANPIONE
+        bool "dongshanpi one"
+        select BR2_CHENXING
+        select BR2_LINUX_KERNEL
+
+config BR2_DONGSHANPIONE_MAIN
+        bool "dongshanpi one main"
+        select BR2_DONGSHANPIONE
+
+config BR2_DONGSHANPIONE_RESCUE
+        bool "dongshanpi one rescue"
+        select BR2_DONGSHANPIONE
