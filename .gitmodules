@@ -16,3 +16,6 @@
 [submodule "br2directfb2"]
 	path = br2directfb2
 	url = https://github.com/fifteenhex/br2directfb2.git
+[submodule "br2games"]
+	path = br2games
+	url = https://github.com/fifteenhex/br2games.git
