@@ -20,7 +20,7 @@
 				algo = "sha1";
 			};
 		};
-		fdt-0 {
+		fdt-dongshanpione {
 			data = /incbin/("../../images/mstar-infinity2m-ssd202d-100ask-dongshanpione.dtb");
 			type = "flat_dt";
 			arch = "arm";
@@ -32,7 +32,7 @@
 				algo = "sha1";
 			};
 		};
-		fdt-1 {
+		fdt-dongshanpione-carrier {
 			data = /incbin/("../../images/mstar-infinity2m-ssd202d-100ask-dongshanpione-carrier.dtb");
 			type = "flat_dt";
 			arch = "arm";
@@ -61,16 +61,16 @@
 
 	configurations {
 		default = "ssd202d-dongshanpione";
-		ssd202-dongshanpione {
-			description = "Linux kernel, FDT blob, ramdisk";
+		ssd202d-dongshanpione {
+			description = "DongShanPi One";
 			kernel = "kernel-0";
-			fdt = "fdt-0";
+			fdt = "fdt-dongshanpione";
 			ramdisk = "ramdisk-0";
 		};
-		ssd202d-dongshanpione {
-			description = "Linux kernel, FDT, ramdisk";
+		ssd202d-dongshanpione-carrier {
+			description = "DongShanPi One on carrier";
 			kernel = "kernel-0";
-			fdt = "fdt-1";
+			fdt = "fdt-dongshanpione-carrier";
 			ramdisk = "ramdisk-0";
 		};
 	};
