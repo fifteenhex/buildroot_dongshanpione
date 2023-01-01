@@ -19,3 +19,9 @@
 [submodule "br2games"]
 	path = br2games
 	url = https://github.com/fifteenhex/br2games.git
+[submodule "br2dgppkg"]
+	path = br2dgppkg
+	url = https://github.com/fifteenhex/br2dgppkg.git
+[submodule "br2sanetime"]
+	path = br2sanetime
+	url = https://github.com/fifteenhex/br2sanetime.git
