@@ -46,6 +46,7 @@
 				algo = "sha1";
 			};
 		};
+/*
 		fdto-lcd0 {
 			data = /incbin/("../../images/mstar-infinity2m-ssd202d-100ask-dongshanpione-100ask_lcd0.dtb");
 			type = "flat_dt";
@@ -70,6 +71,7 @@
 				algo = "sha1";
 			};
 		};
+*/
 	};
 
 	configurations {
@@ -84,6 +86,7 @@
 			kernel = "kernel-0";
 			fdt = "fdt-dongshanpione-carrier";
 		};
+/*
 		lcd0 {
 			description = "lcd0 overlay";
 			fdt = "fdto-lcd0";
@@ -92,5 +95,6 @@
 			description = "ili9341 overlay";
 			fdt = "fdto-ili9341";
 		};
+*/
 	};
 };
